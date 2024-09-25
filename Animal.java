@@ -3,6 +3,8 @@ public abstract class Animal {
 	private String name;
 	private int age;
 	private double weight;
+	
+	// Статическое поле для подсчета созданных объектов
 	private static int count = 0; 
 
 	// Конструктор
