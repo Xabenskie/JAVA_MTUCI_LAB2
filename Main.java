@@ -11,5 +11,6 @@ public class Main {
 			Fish myFish = new Fish("Bubbles", 1, 0.1);
 			myFish.makeSound();
 			myFish.eat();
+			System.out.println("Total objects was created: " + Animal.getCount());
 	}
 }

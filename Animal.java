@@ -3,13 +3,20 @@ public abstract class Animal {
 	private String name;
 	private int age;
 	private double weight;
+	private static int count = 0; 
 
 	// Конструктор
 	public Animal(String name, int age, double weight) {
 			this.name = name;
 			this.age = age;
 			this.weight = weight;
+			count++;
 	}
+	
+  // Статический метод для подсчета созданных объектов
+	public static int getCount() {
+      return count;
+  }
 
 	// Абстрактный метод
 	abstract void eat();
